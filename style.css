@@ -120,7 +120,7 @@ button:hover{
     background-color:#19a058;
     color: white;
     border: none;
-    transform: scale(1.07);
+    transform: scale(1.02);
 }
 /* la div info contient les labels et input  */
 .info {
@@ -200,7 +200,8 @@ h2 {
 }
 .offre-vol{
     width: 21%;
-    height: 315px;
+    height: fit-content;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: column; 
     justify-content:flex-start;
@@ -272,7 +273,14 @@ margin:3px 10px;
 }
 .offre-vol button:hover {
     background-color: #19a058;
+    width: 91%;
+    transition: ease 0.3s;
+
 }
+.offre-vol img{
+    width: 100%;
+}
+
 .nb{
     font-size: 7px;
     padding: 20px 0;
