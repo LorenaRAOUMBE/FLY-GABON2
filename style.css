@@ -1,0 +1,584 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+header{
+    height: 74px;
+    max-width: 93%;
+    margin: 0 auto;
+}
+
+h1, h2 ,h3, h4, ul ,button, label, span ,p {
+    font-family: "Inter", serif;
+}
+/* header:focus,header:active{
+    border: 3px solid rgba(19, 19, 221, 0.959);
+} */
+.header{
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;          
+    align-items: center;
+}
+
+.header img{
+    width: 63.15px;
+    height: 72px;
+    margin: 3px 0;
+}
+
+.header ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+   
+}
+.header li{    
+    font-weight: bold;
+    margin: 0 5px;
+}
+header li:hover{
+    text-decoration: underline;
+    color: #096735;
+    cursor: pointer;
+}
+main{
+min-height: 500px;
+}
+
+/* style de la div contenant le titre ,la div des select ,la div des label et input ,et le span */
+
+.details{
+    min-height: 512px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image:url(flygabon_fondweb_1920x1080px.png);
+    margin-top: 6px;
+    background-size: cover;
+    background-position:0px 25%;
+}
+
+/* style du titre */
+
+.titre{
+    width: 93%;
+    height: 115px;
+    background-color: rgba(0, 0, 0, 0.555);
+    margin:0 auto ;
+    border-radius:15px 15px 0 0;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+h1{
+    height: 450px;;  
+    margin: auto 0;  
+    padding-top: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 42px;
+    text-align: center;
+    color:white
+}
+.prix{
+    color:red;
+}
+
+/* la div detail-vol contient les div select,la div info (qui est la div des input et label et button), */
+.detail-vol{
+    width:93%;
+    background-color: rgba(255, 255, 255, 0.678);
+    border-radius: 0 0 15px 15px;
+    margin: 0 auto;
+}
+/* la div qui contient toutes les div select */
+.select{
+    margin: 15px 5px 8px 34px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+select{
+    outline: none;
+}
+.btn{
+    height: 33px;
+}
+.btn1{
+    height: 33px;
+    color: #096735;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color:#19a058;
+    color: white;
+    border: none;
+    transform: scale(1.07);
+}
+/* la div info contient les labels et input  */
+.info {
+    height: 44px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 5px 2px 31px; 
+}
+.info1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 4px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px;
+}
+.info input{
+    height: 20px;
+    border: none;
+    background: transparent;   
+    outline: none;
+}
+
+.info label{
+    font-weight: bold;
+    font-size: 15px;
+}
+.info button{
+    height: 45px;
+    width: 101px;
+    font-size: 15px;
+    margin: 0 5px;
+    background-color: #096735;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+    border: 0;   
+}
+.info button:hover{
+    cursor: pointer;
+    background-color:#19a058;
+    color: white;
+    border: none;
+    
+}
+.texte{
+    font-size: 7px;
+    padding: 13px 35px;
+    align-items: center;
+
+}
+h2 {
+    text-align: center;
+    padding: 30px;
+}
+.offres {
+    width:93% ;
+    margin: 0 auto;
+    /* padding: 5px; */
+    display: flex;
+    flex-direction:column;
+}
+.OV{
+    height:329px;
+    position: relative;
+   align-items: center;
+}
+.carrousel{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+}
+.offre-vol{
+    width: 21%;
+    height: 315px;
+    display: flex;
+    flex-direction: column; 
+    justify-content:flex-start;
+    margin:5px 20px 5px 0;
+    border: 1px solid #0000000D;
+    border-radius: 15px; 
+    box-shadow: 0px 4px 4px #00000040
+}
+    .bton{
+        position: absolute;
+        border:none;
+        border-radius: 10px;
+        outline: none;
+        cursor: pointer;
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.897);
+        background: rgba(128, 128, 128, 0.404);
+        top :30%;
+        padding: 10px 12px;
+        z-index: 6;
+        transform: tramslatey(-50%); 
+    } 
+#prev{
+    left: 15px;
+}
+#next{
+    right: 3px;
+}
+
+.vols{
+    font-weight: bold;
+    /* text-align: center; */
+    font-size: 14px;
+    padding: 5px 5px;
+}
+.date{
+    font-size: 12px;
+    padding: 5px 5px;
+}
+.debut{
+    font-size: 10px;
+} 
+.billet{
+    font-size: 10px;
+    padding-bottom: 8px;
+}
+/* la div dispo ,est une div qui contient la phrase sur les disponibilites d offre de billet */
+.dispo span{
+display: flex;
+flex-direction: column;
+align-items: end;
+margin:3px 10px;
+}
+.prix2 {
+    font-size: 14px;
+    font-weight: bold;
+    color:#096735;
+}
+.offre-vol button {
+    width: 91%;
+    margin-left: 10px;
+    color:white;
+    background: #096735;
+    padding: 5px;
+    border: 0;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.offre-vol button:hover {
+    background-color: #19a058;
+}
+.nb{
+    font-size: 7px;
+    padding: 20px 0;
+}
+hr{
+    height: 1px;
+    width: 712px;
+    background-color:  #096735;
+    border: none;
+    margin-top: 24px;
+}
+.barnav{
+    display:flex;
+    flex-direction: rows;
+}
+.voir{
+    height: 65px;
+    width: 74px;
+    display: flex;
+    gap:8px;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+}
+.oui--arrow-down {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23000' fill-rule='non-zero' d='M13.069 5.157L8.384 9.768a.546.546 0 0 1-.768 0L2.93 5.158a.55.55 0 0 0-.771 0a.53.53 0 0 0 0 .759l4.684 4.61a1.65 1.65 0 0 0 2.312 0l4.684-4.61a.53.53 0 0 0 0-.76a.55.55 0 0 0-.771 0'/%3E%3C/svg%3E");
+    background-color:#096735;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
+
+.voir button{
+    height:18px ;
+    width: 58px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #096735;
+    border: none;
+    background-color: transparent;
+}
+.brcolor{
+    width: 100%;
+    height: 100%;
+    background-color: #09673575;
+
+}
+.pub{
+    height: 426px;
+    width: 93%;
+    margin: 14px auto;
+    background-image:url(./image/Rectangle\ 10.png);
+    border: 2px solid white;
+}
+.pub h3{
+    width: 80%;
+    padding: 90px 45px 50px ;
+    color: white;
+    font-size: 46px;
+}
+.pub button{
+    color: white;
+    font-size: 15px;
+    Width:180.76px;
+    Height:50.58px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: transparent;
+    margin-left: 50px;
+}
+.pub button:hover{
+    transform: scale(1.1);
+}
+.Grid{
+    width: 93%;
+    height: 145px;
+    margin: 45px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+.blocs{
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.fonctionnalite{
+    width: 49%;
+    height: 172px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #0000000D;
+    box-shadow: 0 4px 4px #00000040;
+    border-radius: 12px;
+}
+.paiement{
+    margin: auto 0;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #0000000D;
+    box-shadow: 0 4px 4px #00000040;
+    border-radius: 12px;
+}
+.uiw--pay {
+    display: inline-block;
+    width: 44px;
+    height: 37px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%23000' d='M11.67 8.537a.3.3 0 0 0-.302.296v2.212a.3.3 0 0 0 .303.296h6.663a.3.3 0 0 0 .303-.296V8.833a.3.3 0 0 0-.303-.296zm4.086-7.036c.922.044 1.585.226 2.005.612c.415.382.628.935.67 1.667v2.097a.674.674 0 0 1-.681.666a.674.674 0 0 1-.682-.666l.001-2.059c-.022-.38-.113-.616-.243-.736c-.126-.116-.51-.22-1.103-.25H2.647c-.537.02-.886.122-1.055.267c-.13.111-.228.417-.229.946l-.003 11.77c.05.514.163.857.308 1.028c.11.13.451.26.953.324h13.116c.614.012.976-.08 1.098-.203c.135-.137.233-.497.233-1.086v-2.045c0-.367.305-.666.682-.666c.376 0 .681.299.681.666v2.045c0 .9-.184 1.573-.615 2.01c-.444.45-1.15.63-2.093.61L2.54 18.495c-.897-.104-1.54-.35-1.923-.803c-.347-.41-.54-.995-.617-1.813V4.044c.002-.876.212-1.535.694-1.947c.442-.38 1.08-.565 1.927-.597zm2.578 5.704c.92 0 1.666.729 1.666 1.628v2.212c0 .899-.746 1.628-1.666 1.628h-6.663c-.92 0-1.666-.73-1.666-1.628V8.833c0-.899.746-1.628 1.666-1.628zm-4.997 1.94c-.46 0-.833.36-.833.803s.373.803.833.803s.833-.36.833-.803s-.373-.804-.833-.804'/%3E%3C/svg%3E");
+    background-color:#096735;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
+.aide{
+    width: 100%;
+    margin: auto 0;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #0000000D;
+    box-shadow: 0 4px 4px #00000040;
+    border-radius: 12px;
+} 
+.clarity--help-line {
+    display: inline-block;
+    width: 47px;
+    height: 47px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Cpath fill='%23000' d='M18 2a16 16 0 1 0 16 16A16 16 0 0 0 18 2m0 30a14 14 0 1 1 14-14a14 14 0 0 1-14 14' class='clr-i-outline clr-i-outline-path-1'/%3E%3Cpath fill='%23000' d='M18.29 8.92a7.38 7.38 0 0 0-5.72 2.57a1 1 0 0 0-.32.71a.92.92 0 0 0 .95.92a1.08 1.08 0 0 0 .71-.29a5.7 5.7 0 0 1 4.33-2c2.36 0 3.83 1.52 3.83 3.41v.05c0 2.21-1.76 3.44-4.54 3.65a.8.8 0 0 0-.76.92s0 2.32 0 2.75a1 1 0 0 0 1 .9h.11a1 1 0 0 0 .9-1v-2.06c3-.42 5.43-2 5.43-5.28v-.05c-.03-3-2.37-5.2-5.92-5.2' class='clr-i-outline clr-i-outline-path-2'/%3E%3Ccircle cx='17.78' cy='26.2' r='1.25' fill='%23000' class='clr-i-outline clr-i-outline-path-3'/%3E%3Cpath fill='none' d='M0 0h36v36H0z'/%3E%3C/svg%3E");
+    background-color:#096735;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
+.descrip{
+    height: 42px;
+    display: flex;
+    flex-direction: column;
+    padding: 18px 3px;
+    gap: 10px;
+}
+.image{
+    margin: auto 15px;
+    align-items: center;
+
+}
+.titre3{
+    font-size: 18px;
+    font-weight: bold;
+}
+.text{
+    font-size: 14px;
+}
+.decouverte{
+    max-width:93%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 15px;
+}
+.legende{
+    padding: 5px;
+}
+.decint{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+}
+.decint1{
+    height: 380px;
+    min-width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;  
+    align-items: center;
+}
+.decint1 p{
+    text-align:left;
+    font-size: 11px;
+    padding-right: 25px;
+}
+.btnsvr{
+    height: 48px;
+    width: 30%;
+    font-size: 15px;
+    color: #096735;
+    border: 1px solid #096735;
+    border-radius: 5px;
+    background:transparent;
+    align-items: center; 
+}
+.btnsvr:hover{
+    transform: scale(1.1);
+
+}
+.city{
+    font-size: 12px;
+    color: #096735;
+    font-weight: bold;
+}
+.decint2{
+    height: 380px;
+    align-items: center;
+}
+.vide{
+    height: 380px;
+    margin: 0 auto;
+    background: url(./image/carte.png);
+    position: relative;
+    bottom: 384px;
+    align-items: center;
+}
+.navpag{
+    padding: 10px;
+}
+.partenariat{
+    width: 93%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction:column;
+}
+.partenariat h2{
+    padding-bottom: 35px;
+}
+.bloc2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.partner{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+
+}
+.partner img{
+    height: 240px;
+    width: 100%;
+}
+footer{
+    height: 280px;
+    background-color: #096735;
+    display: flex;
+    align-items: center;
+   
+}
+.footersite{
+    width:95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.section2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+
+}
+.liste{
+    display: flex;
+    flex-direction:column;
+    margin:0 50px;
+}
+.liste h4{
+    padding-bottom: 30px;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+}
+.liste ul li{
+    list-style: none;
+    color:white;
+    font-size: 14px;
+    margin-bottom: 8px;
+    align-items: center;
+}
+li:hover{
+   text-decoration: underline;
+   cursor: pointer;
+}
+.Copyright{
+    display: flex;
+    justify-content: flex-end;
+}
+.Copyright ul{
+    display: flex;
+    flex-direction: row;
+}
+.Copyright ul li{
+    list-style: none;
+    color: white;
+    font-size: 14px;
+}
