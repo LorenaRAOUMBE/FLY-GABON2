@@ -13,7 +13,7 @@ header{
 }
 
 h1, h2 ,h3, h4, ul ,button, label, span ,p {
-    font-family: "Inter", serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 /* header:focus,header:active{
     border: 3px solid rgba(19, 19, 221, 0.959);
